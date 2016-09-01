@@ -12,9 +12,15 @@
         max-width: 1200px;
         margin: 0 auto;
         background: #ffffff;
-        overflow: hidden;
+        overflow: hidden; /* Works, but may cut off content that is positioned outside of the element */
       }
       
+      /*section:after {*/
+      /*  display: block;*/
+      /*  clear: both;*/
+      /*  content: "";*/
+      /*}*/
+            
       header {
         width: 15%;
         float: left;
