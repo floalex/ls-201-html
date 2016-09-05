@@ -1,0 +1,123 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #282828
+}
+
+h1 {
+  padding: 0 0 25px 0;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+h2 {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+form {
+  max-width: 600px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+fieldset {
+  padding: 24px 36px;
+  margin-bottom: 2px;
+  border-left: 4px solid #cdcccb;
+  background: #ececec;
+}
+
+label {
+  display: block;
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666766
+}
+
+label.checkbox {
+  position: relative;
+  padding: 0 0 20px 25px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+label.checkbox input {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+h2 label {
+  padding-bottom: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea {
+  width: 100%;
+  height: 40px;
+  padding: 14px 12px;
+  margin-bottom: 24px;
+  font: normal 14px Helvetica, Arial, sans-serif;
+  border: 1px solid #2e67b2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: auto;
+  resize: none;
+}
+
+input[type="submit"] {
+  padding: 14px 30px;
+ -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background: #2e67b2;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  background: #5f95cc;
+}
+
+input[name="first_name"],
+input[name="last_name"] {
+  width: 49%;
+}
+
+input[name="last_name"] {
+  margin-left: 2%;
+}
+
+dl.partial {
+  display: inline-block;
+  padding-right: 15px;
+  box-sizing: border-box;
+  /*vertical-align: top;*/
+}
+
+dl.third {
+  width: 33.3%;
+}
+
+dl.half {
+  width: 50%;
+}
+
+dl.last {
+  padding-right: 0;
+}
