@@ -55,7 +55,6 @@ h2 {
 h2:before,
 h2:after {
   display: inline-block;
-  padding: 0 24px;
   font-size: 22px;
   content: "\2022";
   vertical-align: 5px;
