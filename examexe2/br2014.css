@@ -1,6 +1,7 @@
 @import url("whitespace-reset.css");
 
 body {
+  margin: 0;
   font: 13px "Open Sans", Arial, sans-serif;
   color: #424242;
 }
@@ -18,6 +19,10 @@ header {
 a {
   text-decoration: none;
   color: #008000;
+}
+
+a.active {
+  font-weight: bold;
 }
 
 img {
@@ -98,8 +103,13 @@ nav a:hover {
 }
 
 .section h2 {
+  margin: 30px 0 4px 0;
   font-size: 24px;
-  font-weight: 600px;
+  font-weight: 600;
+}
+
+.section a {
+  font-weight: bold;
 }
 
 .section p,
@@ -123,16 +133,17 @@ nav a:hover {
 }
 
 .speakers-container {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: 0 auto;
   text-align: center;
 }
 
 .speaker-box {
+  position: relative;
   display: inline-block;
   width: 280px;
   height: 379px;
-  margin: 5px 7px;
+  margin: 5px;
   border: 1px solid #efefef;
   box-sizing: border-box;
 }
@@ -142,11 +153,36 @@ nav a:hover {
 }
 
 .speaker-box h2 {
-  padding-top: 35px;
   color: #008000;
-  font-size: 24px;
-  font-weight: bold;
 }
+
+.speaker-box p {
+  padding: 0 10px;
+}
+
+.speaker-hover-text {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: #ffffff;
+  background: rgba(0,0,0,0.9);
+  transition: all 0.5s;
+}
+
+.speaker-hover-text h2 {
+  margin-top: 4px;
+}
+
+.speaker-hover-text p {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.speaker-box:hover .speaker-hover-text { opacity: 1; }
 
 .schedule-table {
   max-width: 960px;
