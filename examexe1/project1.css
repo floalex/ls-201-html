@@ -1,7 +1,8 @@
 @import url("whitespace-reset.css");
 
 body {
-  font: 24px  Helvetica, Arial, sans-serif;
+  font: 24px 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   line-height: 1.4;
   color: #20201F;
   background: #3279b6;
@@ -45,7 +46,7 @@ nav div {
 header nav ul:before {
   display: inline-block;
   content: url("http://placehold.it/35X35");
-  padding-top: 10px;
+  padding-top: 20px;
   vertical-align: -13px;
 }
 
@@ -136,13 +137,78 @@ main {
 .content {
   max-width: 980px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .section-header {
   margin: 90px 0 45px;
   text-align: center;
   font-size: 36px;
+}
+
+.section-header h2 {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.section-header .left {
+  left: -84px;
+}
+
+.section-header h2 span {
+  display: block;
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  top: 50%;
+  margin-top: -40px;
+}
+
+.section-header h2 span:before,
+.section-header h2 span:after {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  content: "";
+}
+
+.section-header span.left:before {
+  top: 0;
+  left: 0;
+  border-width: 42px 0 42px 42px;
+  border-color: transparent transparent transparent #007bff;
+  opacity: .2;
+}
+
+.section-header span.left:after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 42px 42px 42px;
+  border-color: transparent transparent #007bff transparent;
+  opacity: .05;
+}
+
+.section-header .right {
+  right: -84px;
+}
+
+.section-header span.right:before {
+  top: 0;
+  right: 0;
+  border-width: 42px 42px 0 42px;
+  border-color: #007bff transparent transparent transparent;
+  opacity: .05;
+}
+
+.section-header span.right:after {
+  bottom: 0;
+  right: 0;
+  border-width: 42px 42px 42px 0;
+  border-color: transparent #007bff transparent transparent;
+  opacity: .1;
 }
 
 .intro-centered {
@@ -154,7 +220,7 @@ main {
   display: inline-block;
   max-width: 570px;
   line-height: 1.5;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .pageheaders {
@@ -451,6 +517,14 @@ li.level-supporter a {
   position: absolute;
 }
 
+blockquote {
+  margin: 1em 40px;
+}
+
+#location {
+  margin-bottom: 60px;
+}
+
 #location h2 {
   text-transform: none;
 }
@@ -463,8 +537,10 @@ li.level-supporter a {
 #location blockquote {
   display: block;
   padding-left: 40px;
+  margin-bottom: 40px;
+  margin-left: 0;
   border-left: 4px #3381c3 solid;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
   font-style: italic;
   box-sizing: border-box;
@@ -473,14 +549,14 @@ li.level-supporter a {
 #location cite {
   display: block;
   text-align: right;
-  font-size: 13px;
+  font-size: 14px;
   padding-top: 20px;
 }
 
 footer {
-  font-size: 10px;
+  font-size: 12px;
   background: #ffffff;
-  padding: 40px 0 40px 0;
+  padding-bottom: 40px;
   text-align: center;
   line-height: 20px;
 }

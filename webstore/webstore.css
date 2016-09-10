@@ -31,7 +31,7 @@ main {
   box-sizing: border-box;
 }
 
-/* This psuedo element is for the gray background throughout the main */
+/* This psuedo element is for the ul elements all go inside the gray background */
 main:after {
   display: block;
   clear: both;
