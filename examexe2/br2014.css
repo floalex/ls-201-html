@@ -6,7 +6,7 @@ body {
   color: #424242;
 }
 
-header {
+header nav {
   position: fixed;
   width: 100%;
   border-top: 10px solid #f5f5f5;
@@ -35,7 +35,6 @@ img {
 
 nav ul {
   max-width: 960px;
-  padding: 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -193,7 +192,6 @@ nav a:hover {
 .schedule-table td {
   padding: 10px;
   border-top: 1px solid #efefef;
-  text-align: left;
 }
 
 .schedule-hour {
@@ -203,6 +201,7 @@ nav a:hover {
 
 .schedule-table h2 {
   display: inline-block;
+  margin: 0 10px 0 0;
   font-weight: normal;
   text-align: left;
   vertical-align: middle;
@@ -299,4 +298,52 @@ footer #dark-background {
   text-align: left;
   font-size: 31px;
   text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  header nav { display: none; }
+  
+  #front {
+    top: 0;
+    margin-bottom: 0;
+    height: 300px;
+  }
+  
+  #front .logo {
+    margin-top: 90px;
+  }
+  
+  #front h1 {
+    font-size: 40px;
+  }
+  
+  #front h2 {
+    font-size: 20px;
+  }
+  
+  .schedule-table tr {
+    position: relative;
+    display: block;
+    border-top: 1px solid #efefef;
+  }
+  
+  .schedule-table td {
+    display: block;
+    border: none;
+  }
+  
+  .schedule-hour {
+    padding: 20px !important;
+    text-align: right;
+  }
+  
+  .schedule-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .schedule-photo img {
+    width: 80px;  
+  }
 }
