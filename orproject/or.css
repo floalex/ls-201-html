@@ -1,0 +1,532 @@
+@import url("whitespace-reset.css");
+
+/* to prevent whitespace on smaller screen */
+/*https://css-tricks.com/box-sizing/*/
+/*https://css-tricks.com/international-box-sizing-awareness-day/*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Verdana, Helvetica, sans-serif;
+  letter-spacing: -0.1px;
+  color: rgb(0, 0, 0);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  color: #00b7b7;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 34px;
+  margin: 23px 0 20px 0;
+  line-height: 30px;
+}
+
+h2{
+  font-size: 23px;
+  margin: 15px 0;
+}
+
+p {
+  font-size: 15px;
+}
+
+img {
+  display: block;
+}
+
+a {
+  cursor: auto;
+  color: #1010dd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.left {
+  float: left;
+}
+
+header {
+  width: 100%;
+  position: relative;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#brand {
+  background: #00b7b7;
+}
+
+.content-row {
+  max-width: 910px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.brand-content {
+  height: 41px;
+}
+
+#logo {
+  float: left;
+  padding: 8px 0;
+  max-width: 129px;
+  width: 100%;
+  border: 0px;
+}
+
+.navbar {
+  position: relative;
+  background: rgb(0, 0, 0);
+}
+
+.sitenav {
+  position: relative;
+}
+
+.event-content {
+  padding: 20px 0;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.event-logo {
+  padding-right: 60px;
+  float: left;
+}
+
+.event-logo a {
+  display: inline-block;
+  width: 283px;
+  height: 77px;
+  text-indent: -9999px;
+  background: url("//cdn.oreillystatic.com/en/assets/1/event/125/fluent2015_svg_logo.svg") 0 0 no-repeat;
+}
+
+.location-info {
+  float: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  font-weight: normal;
+  margin-top: -1px;
+}
+
+.colorline {
+  font-weight: bold;
+  color: #00b7b7;
+}
+
+label {
+  display: none;
+}
+
+nav {
+  width: 100%;
+}
+
+.menu ul {
+  padding-top: 14px;
+  height: 45px;
+}
+
+.menu li {
+  float: left;
+  line-height: 24px;
+  max-width: 910px;
+}
+
+.menu li:first-child {
+  margin-left: -20px; 
+}
+
+.menu li a {
+  border-right: 1px solid #8C8C8C;
+  padding: 0 20px;
+}
+
+.menu li:last-child a {
+  border-right: none;
+}
+
+.menu a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+}
+
+.menu a:hover, menu a:active { 
+  background-color: #00b7b7; 
+  color: #fff; 
+  text-decoration: none;
+}
+
+.blog_section {
+  position: relative;
+  margin: 0 auto;
+  max-width: 910px;
+  width: 100%;
+  padding: 0 20px 20px 20px;  
+  background: #ffffff;
+  z-index: 1;
+}
+
+.blog_section p {
+  letter-spacing: -0.01em; 
+}
+
+.blog_header {
+  font-size: 10px;
+}
+
+.blog_author_photo {
+  height: 50px;
+  width: 38px;
+  float: left;
+  margin: 0 10px 5px 0;
+}
+
+.blog_author_name,
+.blog_author_twitter,
+.blog_metadata {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.article_share {
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.twitter {
+  margin: 0 5px 1px 0;
+}
+
+.blog_body p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 16px 0;
+}
+
+.blog_body p img {
+  margin: 10px;
+  width: 250px;
+  height: 167px;
+  float: right;
+}
+
+.special {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.blog_body ul {
+  padding-left: 40px;
+}
+
+.blog_body ul li {
+  font-size: 15px;
+  line-height: 23px;
+  list-style-image: url('//cdn.oreillystatic.com/en/assets/1/event/93/fluent2013_bullet.gif'); 
+}
+
+.sponsors-container {
+  border-top: 2px solid #cacaca;
+  padding: 0;
+  margin: auto;
+}
+
+.sponsors-section {
+  padding-top: 20px;
+}
+
+.sponsor_list_heading {
+  background: linear-gradient(to right,#fff 0,#b0b0b0 50%,#fff 100%);
+  padding: 5px;
+  margin: 26px auto;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  width: 100%;
+  max-width: 830px;
+}
+
+.sponsors-section ul {
+  text-align: center;
+}
+
+.sponsors-section ul li {
+  display: inline-block;
+  width: 126px;
+  margin: 12px 15px;
+  vertical-align: middle;
+}
+
+.sponsors-section img {
+  margin: 0 auto;
+}
+
+#contacts {
+  border-top: 1px solid #bcbcbc;
+  padding: 10px 0 20px 0;
+  font-size: 13px;
+  letter-spacing: -0.13px;
+  color: #888888;
+}
+
+.col-1-3 {
+  width: 33.33%;
+  float: left;
+  padding-right: 20px;
+}
+
+.grid {
+  margin-right: -20px;
+}
+
+#contacts h3 {
+  font-weight: bold;
+  color: #888;
+}
+
+#contacts p {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+#contacts a {
+  color: #888;
+}
+
+.footer-top {
+  background: rgb(0, 0, 0);
+}
+
+.footer-content {
+  padding: 5px 0 22px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.banner {
+  padding-left: 20px;
+  padding-bottom: 5px;
+  max-height: 95px;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 728px;
+  max-height: 90px;
+  height: auto;
+}
+
+.col-1-5 {
+  width: 20%;
+  float: left;
+}
+
+.footercol {
+  display: inline-block;
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+.footercol ul {
+  margin: 0;
+  padding: 20px 0;
+  line-height: 19.5px;
+}
+
+.col-1-5 li:first-child {
+  color: #00b7b7;
+}
+
+.col-1-5 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+#copyright {
+  font-size: 1.4rem;
+  padding: 20px 0;
+  background: #222;
+  color: #fff;
+}
+
+ul.social {
+  padding: 17px 0;
+}
+
+.social li {
+  line-height: 45px;
+}
+
+.social img {
+  max-width: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.social a {
+  vertical-align: middle;
+}
+
+#copyright {
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+#copyright p {
+  margin: 15px 0;
+  letter-spacing: -0.15px;
+}
+
+#copyright a {
+  line-height: 1.4em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#bottom {
+  background: #ffffff;
+  height: 13px;
+}
+
+@media only screen and (max-width: 918px) {
+  label {
+    cursor: pointer;
+  }
+  
+  .brand-content {
+    padding: 0;
+  }
+  
+  .navbar #event-row {
+    width: 85%;
+  }
+  
+  .event-content {
+    padding-bottom: 10px;
+  }
+  
+  .event-logo {
+    padding: 0 300px 0 0;
+  }
+  
+  .event-logo a {
+    max-width: 279px;
+  }
+  
+  .location-info {
+    padding-top: 15px;
+    letter-spacing: -0.15px;
+  }
+  
+  label.toggle {
+    display: block;
+    background: #000 url(//cdn.oreillystatic.com/en/assets/1/eventprovider/1/gray_menu_icon.png) 40px 40px no-repeat;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-indent: -9999px;
+  }
+  
+  .sitenav {
+    display: none;
+  }
+  
+  .sitenav > .content-row { padding: 0; }
+  
+  #menu-toggle:checked ~ .sitenav {
+    display: block;
+  }
+  
+  .menu ul {
+    width: 100%;
+    display: table;
+    background: #333;
+    padding: 0;
+    margin-left: 0;
+    position: absolute;
+    border-top: 1px solid #8c8c8c;
+    z-index: 2;
+  }
+  
+  .menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .menu li {
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+  
+  .menu li a {
+    border-bottom: 1px solid #8C8C8C;
+    border-right: 1px solid #8C8C8C;
+    padding: 0;
+    color: #fff;
+  }
+  
+  .menu a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .footercol {
+    display: block;
+  }
+  
+  .col-1-5 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .event-logo a {
+    background-size: 200px auto;
+  }
+  
+  .location-info {
+    padding-top: 0;
+    letter-spacing: -0.2px;
+  }
+}
