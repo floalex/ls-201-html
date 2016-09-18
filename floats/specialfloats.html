@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Special Floats Cases</title>
+  <style>
+  .columns {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 10px;
+    background: #efefef;
+  }
+  
+  .primary {
+    font-size: 15px;
+  }
+  
+  .secondary {
+    float: right;
+    width: 280px;
+    background: white;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .date {
+    font-size: 20px;
+  }
+  
+  li#element {
+    background: #383f5f;
+    list-style: none;
+  }
+  
+  .todos-count {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 50%;
+    background: yellow;
+    float: right;
+  }
+  
+  #columns {
+    width: 900px;
+    padding: 30px;
+    margin: 0 auto;
+    background: #efefef;
+  }
+  
+  #primary {
+    float: left;
+    width: 600px;
+    background: yellow;
+  }
+  
+  #secondary {
+    float: right;
+    width: 280px;
+    background: yellow;
+  }
+  </style>
+</head>
+<body>
+  <div class="columns">
+    <a class="primary">
+      Main Content
+    </a>
+
+    <div class="secondary">
+      Sidebar Content
+    </div>
+  </div>
+  
+  <ul>
+    <li id="element">
+      <a class="date">03/16</a>
+      <div class="todos-count">2</div>
+    </li>
+  </ul>
+  
+  <!--Needs to contain this float-->
+  <div id="columns">
+  <div id="primary">
+    <h1>Main Content</h1>
+  </div>
+
+  <div id="secondary">
+    <h3>Sidebar Content</h3>
+  </div>
+</div>
+</body>
+</html>
