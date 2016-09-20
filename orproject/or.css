@@ -114,13 +114,13 @@ input[type="checkbox"] {
   float: left;
 }
 
-.event-logo a {
-  display: inline-block;
-  width: 283px;
-  height: 77px;
-  text-indent: -9999px;
-  background: url("//cdn.oreillystatic.com/en/assets/1/event/125/fluent2015_svg_logo.svg") 0 0 no-repeat;
-}
+/*.event-logo a {*/
+/*  display: inline-block;*/
+/*  width: 283px;*/
+/*  height: 77px;*/
+/*  text-indent: -9999px;*/
+/*  background: url("//cdn.oreillystatic.com/en/assets/1/event/125/fluent2015_svg_logo.svg") 0 0 no-repeat;*/
+/*}*/
 
 .location-info {
   float: left;
@@ -522,12 +522,17 @@ ul.social {
 }
 
 @media (max-width: 460px) {
-  .event-logo a {
-    background-size: 200px auto;
+  .event-logo {
+    padding: 0;
+  }
+  .event-logo img {
+    /*background-size: 200px auto;*/
+    float: left;
+    width: 75%;
   }
   
-  .location-info {
-    padding-top: 0;
-    letter-spacing: -0.2px;
-  }
+  /*.location-info {*/
+  /*  padding-top: 0;*/
+  /*  letter-spacing: -0.2px;*/
+  /*}*/
 }
